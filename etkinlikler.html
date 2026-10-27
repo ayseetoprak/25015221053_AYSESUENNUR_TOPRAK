@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampüs Fotoğraf Kulübü - Etkinlikler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="atla" href="#icerik">İçeriğe geç</a>
+
+  <header class="ust">
+    <div class="kap">
+      <a class="marka" href="index.html">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M3 10V3h7M20 3h7v7M27 20v7h-7M10 27H3v-7" stroke="#10243b" stroke-width="2.6" stroke-linecap="square"/><circle cx="15" cy="15" r="4.2" fill="#f2a900"/></svg>
+        Kampüs Fotoğraf Kulübü
+      </a>
+      <nav aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html" class="aktif" aria-current="page">Etkinlikler</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="kap">
+      <div class="sayfa-basligi">
+        <h1>Etkinlikler</h1>
+        <p>Gezilerimizin, atölyelerimizin ve sergimizin tarih ve yer bilgileri.</p>
+      </div>
+
+      <div class="arama-alani">
+        <label for="arama" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Etkinlik ara</label>
+        <input type="search" id="arama" class="arama-kutusu" placeholder="Başlık, tarih, yer veya açıklamaya göre ara" autocomplete="off">
+        <p class="sayac" id="sayac" aria-live="polite">6 etkinlik</p>
+      </div>
+
+      <p class="sonuc-yok" id="sonuc-yok" role="status" hidden>
+        <strong>Aramanıza uygun etkinlik bulunamadı.</strong><br>
+        Daha kısa bir kelime deneyin ya da aramayı temizleyin.
+      </p>
+
+      <div class="liste" id="liste">
+
+        <article class="etkinlik">
+          <time class="tarih" datetime="2026-11-07">
+            <span class="gun">7</span>
+            <span class="ay">Kasım 2026</span>
+          </time>
+          <div>
+            <h3>Sonbahar Kampüs Gezisi</h3>
+            <p class="yer">Kampüs Botanik Bahçesi</p>
+            <p class="aciklama">Sonbahar yapraklarını ve kampüsün renklerini birlikte fotoğraflıyoruz. Her seviyeden katılımcı gelebilir.</p>
+          </div>
+        </article>
+
+        <article class="etkinlik">
+          <time class="tarih" datetime="2026-11-14">
+            <span class="gun">14</span>
+            <span class="ay">Kasım 2026</span>
+          </time>
+          <div>
+            <h3>Portre Fotoğrafçılığı Atölyesi</h3>
+            <p class="yer">Mühendislik Fakültesi B-204</p>
+            <p class="aciklama">Işık kullanımı, poz verdirme ve kadraj konularını uygulamalı olarak öğreneceğimiz bir atölye çalışması.</p>
+          </div>
+        </article>
+
+        <article class="etkinlik">
+          <time class="tarih" datetime="2026-11-21">
+            <span class="gun">21</span>
+            <span class="ay">Kasım 2026</span>
+          </time>
+          <div>
+            <h3>Gece Fotoğrafı Buluşması</h3>
+            <p class="yer">Kampüs Göl Kenarı</p>
+            <p class="aciklama">Tripod kullanarak uzun pozlama ve gece fotoğrafı denemeleri yapacağız. Tripodunuzu getirmeyi unutmayın.</p>
+          </div>
+        </article>
+
+        <article class="etkinlik">
+          <time class="tarih" datetime="2026-11-28">
+            <span class="gun">28</span>
+            <span class="ay">Kasım 2026</span>
+          </time>
+          <div>
+            <h3>Telefonla Fotoğraf Çekimi</h3>
+            <p class="yer">Merkez Kütüphane Konferans Salonu</p>
+            <p class="aciklama">Profesyonel kamera olmadan sadece telefonla güzel fotoğraflar çekmenin püf noktalarını paylaşıyoruz.</p>
+          </div>
+        </article>
+
+        <article class="etkinlik">
+          <time class="tarih" datetime="2026-12-12">
+            <span class="gun">12</span>
+            <span class="ay">Aralık 2026</span>
+          </time>
+          <div>
+            <h3>Yıl Sonu Fotoğraf Sergisi</h3>
+            <p class="yer">Öğrenci Merkezi Sergi Salonu</p>
+            <p class="aciklama">Üyelerimizin bu dönem çektiği en iyi fotoğraflar sergilenecek. Sergi tüm öğrencilere açıktır.</p>
+          </div>
+        </article>
+
+        <article class="etkinlik">
+          <time class="tarih" datetime="2026-12-19">
+            <span class="gun">19</span>
+            <span class="ay">Aralık 2026</span>
+          </time>
+          <div>
+            <h3>Fotoğraf Düzenleme Eğitimi</h3>
+            <p class="yer">Bilgisayar Laboratuvarı 3</p>
+            <p class="aciklama">Çektiğimiz fotoğrafları bilgisayarda düzenlemeyi, renk ve parlaklık ayarlarını öğreniyoruz.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap">
+      <p><strong>Kampüs Fotoğraf Kulübü</strong><br>&copy; 2026 Tüm hakları saklıdır.</p>
+      <nav aria-label="Alt menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const arama = document.getElementById("arama");
+    const etkinlikler = document.querySelectorAll(".etkinlik");
+    const sayac = document.getElementById("sayac");
+    const sonucYok = document.getElementById("sonuc-yok");
+
+    // Boşlukları sadeleştirerek küçük harfe çevir (Türkçe kurallarıyla)
+    function duzelt(metin) {
+      return metin.toLocaleLowerCase("tr").replace(/\s+/g, " ").trim();
+    }
+
+    const metinler = Array.from(etkinlikler, function (e) {
+      return duzelt(e.textContent);
+    });
+
+    function filtrele() {
+      const aranan = duzelt(arama.value);
+      let bulunan = 0;
+
+      etkinlikler.forEach(function (etkinlik, i) {
+        const eslesti = metinler[i].includes(aranan);
+        etkinlik.hidden = !eslesti;
+        if (eslesti) bulunan++;
+      });
+
+      sayac.textContent = aranan
+        ? bulunan + " etkinlik bulundu"
+        : etkinlikler.length + " etkinlik";
+      sonucYok.hidden = bulunan !== 0;
+    }
+
+    arama.addEventListener("input", filtrele);
+  </script>
+
+</body>
+</html>
